@@ -12,6 +12,9 @@ There are several supplemental documents that will help to make sense of the dat
 
 - Bibliography.md contains bibliographic information on the die studies used in creating the data.
 
+## Using the dashboard
+You need to spin this up in a virtual instance of some kind. For testing you can just run: streamlit run [filename.py], in this case gcd_dash.py.
+
 ## Updates
 
 ### 0.91:
