@@ -10,7 +10,8 @@ import altair as alt
 # From Jupyter notebook
 # Load Data
 df = pd.read_csv('gcd_raw.csv')
-
+df['mint_location'] = df['mint_location'].str.title()
+df['denomination'] = df['denomination'].str.title()
 # Begin Streamlit app below
 
 app_title = 'Greek Coin Dies'
