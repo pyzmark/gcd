@@ -121,7 +121,7 @@ def display_map(df, mint_location, denomination, range_min, range_max):
     signlongitudes = list(summed.long)
     labels = list(
         summed.mint_location.astype(str) + ' produced ' + summed['number_of_obverse_dies'].astype(str) +
-        ' dies between ' + summed['range_min'].astype(str) + " and " + summed['range_max'].astype(str) + ' BCE.'
+        ' dies between ' + str(range_min) + " and " + str(range_max) + ' BCE.'
     )
     for lat, lng, label, size in zip(signlatitudes, signlongitudes, labels, signsize):
         if size == 0:
